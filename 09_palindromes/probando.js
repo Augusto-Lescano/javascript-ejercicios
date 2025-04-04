@@ -8,18 +8,9 @@ const palindromes = function (string) {
         return false;
       }
   })
-
-
-  let compare=[]
-  let indice=0
-  for(let i=originalFiltered.length-1;i>=0;i--){
-    compare[indice]=originalFiltered[i]
-    indice++
-  }
-
+  let compare=originalFiltered.reverse()
   compare=compare.join()
   originalFiltered=originalFiltered.join()
-
   if(originalFiltered.toLowerCase()===compare.toLowerCase()){
     return true
   }else{
@@ -27,5 +18,7 @@ const palindromes = function (string) {
   }
 };
 
-// Do not edit below this line
-module.exports = palindromes;
+console.log('ZZZZ car, a man, a maracaz.')
+
+
+
